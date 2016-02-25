@@ -3,6 +3,7 @@ var expect = require('chai').expect;
 var chunk = require('../src/array/_chunk');
 var initial = require('../src/array/_initial');
 var last = require('../src/array/_last');
+var uniq = require('../src/array/_uniq');
 
 describe('ARRAY', function() {
     describe('_.chunk', function() {
@@ -41,6 +42,19 @@ describe('ARRAY', function() {
             var array = [1, 2, 3, 4, 5];
             var result = last(array);
             expect(result).to.equal(array[array.length]);
+        });
+    });
+
+    describe('_.uniq', function() {
+        it('should return an empty array if empty array is inspected', function() {
+            expect(uniq([]).length).to.equal(0);
+        });
+
+        it('should return a duplicate-free version of an array', function() {
+            var array = [1, 1, 5, 2];
+            var result = uniq(array);
+
+            expect(result.length).not.equal(array.length);
         });
     });
 });
