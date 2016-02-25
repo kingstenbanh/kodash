@@ -9,22 +9,18 @@
 var forEach = require('../collection/_forEach');
 
 function chunk(array, size) {
-    if (size === 0) {
-        return array;
-    }
 
     var result = [];
+    var temp = [];
 
     forEach(array, function(value, index) {
-        var temp = [];
-
-        while(index % size !== 0) {
-            temp.push(value);
+        temp.push(value);
+        if (index + 1 % size == 0) {
+            result.push(temp);
+            temp = [];
         }
-        result.push(temp);
     });
 
-    console.log(result);
     return result;
 }
 
