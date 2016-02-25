@@ -108,15 +108,7 @@ _.sortBy
 
 ## Date
 #### Complete
-
-
-
-
-
-#### ToDo
 _.now
-
-
 
 
 ## Function
