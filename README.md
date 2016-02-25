@@ -70,6 +70,8 @@ _.zipWith
 
 ## Collection
 #### Complete
+_.each -> forEach
+_.forEach
 _.size
 
 
@@ -78,14 +80,12 @@ _.size
 
 #### ToDo
 _.countBy
-_.each -> forEach
 _.eachRight -> forEachRight
 _.every
 _.filter
 _.find
 _.findLast
 _.flatMap
-_.forEach
 _.forEachRight
 _.groupBy
 _.includes
