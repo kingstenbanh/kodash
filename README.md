@@ -1,5 +1,7 @@
 ## Array
 #### Complete
+_.initial
+_.last
 
 
 
@@ -25,12 +27,10 @@ _.flattenDepth
 _.fromPairs
 _.head
 _.indexOf
-_.initial
 _.intersection
 _.intersectionBy
 _.intersectionWith
 _.join
-_.last
 _.lastIndexOf
 _.pull
 _.pullAll

@@ -1,6 +1,7 @@
 var expect = require('chai').expect;
 
 var chunk = require('../src/array/_chunk');
+var initial = require('../src/array/_initial');
 var last = require('../src/array/_last');
 
 describe('ARRAY', function() {
@@ -18,6 +19,15 @@ describe('ARRAY', function() {
             var result = chunk(array, size);
 
             expect(result.length).to.equal(array.length / size);
+        });
+    });
+
+    describe('_.initial', function() {
+        it('should return all but the last element of array', function() {
+            var array = [1, 2, 3, 4];
+            var result = initial(array);
+
+            expect(result[array.length - 1]).to.be.undefined;
         });
     });
 
