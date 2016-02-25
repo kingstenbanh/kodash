@@ -6,7 +6,7 @@
  * @param callback
  */
 function forEach(collection, callback) {
-    if (Array.isArray(collection) === 'array') {
+    if (Array.isArray(collection)) {
         for (var i = 0, len = collection.length; i < len; i++) {
             callback(collection[i], i, collection);
         }
