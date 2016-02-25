@@ -148,6 +148,7 @@ _.wrap
 
 
 #### Complete
+_.isArray
 _.isString
 
 
@@ -164,7 +165,6 @@ _.eq
 _.gt
 _.gte
 _.isArguments
-_.isArray
 _.isArrayBuffer
 _.isArrayLike
 _.isArrayLikeObject
