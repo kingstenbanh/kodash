@@ -1,6 +1,6 @@
 var expect = require('chai').expect;
 
-var add = require('../src/_add.js');
+var add = require('../src/math/_add.js');
 
 describe('MATH', function() {
     describe('_.add', function() {

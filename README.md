@@ -70,6 +70,7 @@ _.zipWith
 
 ## Collection
 #### Complete
+_.size
 
 
 
@@ -99,7 +100,6 @@ _.reject
 _.sample
 _.sampleSize
 _.shuffle
-_.size
 _.some
 _.sortBy
 
@@ -224,13 +224,13 @@ _.toString
 ## Math
 
 #### Complete
+_.add
 
 
 
 
 
 #### ToDo
-_.add
 _.ceil
 _.floor
 _.max
