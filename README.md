@@ -2,6 +2,7 @@
 #### Complete
 _.initial
 _.last
+_.uniq
 
 
 
@@ -54,7 +55,6 @@ _.takeWhile
 _.union
 _.unionBy
 _.unionWith
-_.uniq
 _.uniqBy
 _.uniqWith
 _.unzip
@@ -91,7 +91,6 @@ _.groupBy
 _.includes
 _.invokeMap
 _.keyBy
-_.map
 _.orderBy
 _.partition
 _.reduce
@@ -149,6 +148,7 @@ _.wrap
 
 
 #### Complete
+_.isString
 
 
 
@@ -194,7 +194,6 @@ _.isPlainObject
 _.isRegExp
 _.isSafeInteger
 _.isSet
-_.isString
 _.isSymbol
 _.isTypedArray
 _.isUndefined
