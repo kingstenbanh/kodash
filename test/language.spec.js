@@ -5,6 +5,7 @@ var gte = require('../src/language/_gte');
 var isArray = require('../src/language/_isArray');
 var isString = require('../src/language/_isString');
 var lt = require('../src/language/_lt');
+var lte = require('../src/language/_lte');
 
 describe('LANGUAGE', function() {
     describe('_.gt', function() {
@@ -74,6 +75,20 @@ describe('LANGUAGE', function() {
 
         it('should return true for 3 < 1', function() {
             expect(lt(3, 1)).to.be.false;
+        });
+    });
+
+    describe('_.lte', function() {
+        it('should return true for 1 <= 3', function() {
+            expect(lte(1, 3)).to.be.true;
+        });
+
+        it('should return false for 3 <= 3', function() {
+            expect(lte(3, 3)).to.be.true;
+        });
+
+        it('should return true for 3 <= 1', function() {
+            expect(lte(3, 1)).to.be.false;
         });
     });
 });

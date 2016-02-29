@@ -152,7 +152,8 @@ _.gte
 _.gt
 _.isArray
 _.isString
-
+_.lt
+_.lte
 
 
 
@@ -199,8 +200,6 @@ _.isTypedArray
 _.isUndefined
 _.isWeakMap
 _.isWeakSet
-_.lt
-_.lte
 _.toArray
 _.toInteger
 _.toLength
