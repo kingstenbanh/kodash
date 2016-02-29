@@ -148,6 +148,7 @@ _.wrap
 
 
 #### Complete
+_.gte
 _.gt
 _.isArray
 _.isString
@@ -163,7 +164,6 @@ _.cloneDeep
 _.cloneDeepWith
 _.cloneWith
 _.eq
-_.gte
 _.isArguments
 _.isArrayBuffer
 _.isArrayLike
