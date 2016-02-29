@@ -1,6 +1,7 @@
 ## Array
 #### Complete
 _.initial
+_.join
 _.last
 _.uniq
 
@@ -31,7 +32,6 @@ _.indexOf
 _.intersection
 _.intersectionBy
 _.intersectionWith
-_.join
 _.lastIndexOf
 _.pull
 _.pullAll
@@ -148,6 +148,7 @@ _.wrap
 
 
 #### Complete
+_.gt
 _.isArray
 _.isString
 
@@ -162,7 +163,6 @@ _.cloneDeep
 _.cloneDeepWith
 _.cloneWith
 _.eq
-_.gt
 _.gte
 _.isArguments
 _.isArrayBuffer

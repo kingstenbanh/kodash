@@ -1,9 +1,24 @@
 var expect = require('chai').expect;
 
+var gt = require('../src/language/_gt');
 var isArray = require('../src/language/_isArray');
 var isString = require('../src/language/_isString');
 
 describe('LANGUAGE', function() {
+    describe('_.gt', function() {
+        it('should return true for 3 > 1', function() {
+           expect(gt(3, 1)).to.be.true;
+        });
+
+        it('should return false for 3 > 3', function() {
+            expect(gt(3, 3)).to.be.false;
+        });
+
+        it('should return true for 3 > 1', function() {
+            expect(gt(1, 3)).to.be.false;
+        });
+    });
+
     describe('_.isArray', function() {
         it('should return true for [1, 2, 3]', function() {
             expect(isArray([1, 2, 3])).to.be.true;
