@@ -2,6 +2,7 @@ var expect = require('chai').expect;
 
 var chunk = require('../src/array/_chunk');
 var initial = require('../src/array/_initial');
+var join = require('../src/array/_join');
 var last = require('../src/array/_last');
 var uniq = require('../src/array/_uniq');
 
@@ -29,6 +30,29 @@ describe('ARRAY', function() {
             var result = initial(array);
 
             expect(result[array.length - 1]).to.be.undefined;
+        });
+    });
+
+    describe('_.join', function() {
+        it('should return a comma separated string if no separator is supplied', function() {
+            var array = ['a', 'b', 'c'];
+            var result = join(array);
+
+            expect(result).to.equal('a,b,c');
+        });
+
+        it('should return a string separated by given separator', function() {
+            var array = ['a', 'b', 'c'];
+            var result = join(array, '-');
+
+            expect(result).to.equal('a-b-c');
+        });
+
+        it('should return a string of numbers separated by given separator', function() {
+            var array = [1, 2, 3];
+            var result = join(array, '-');
+
+            expect(result).to.equal('1-2-3');
         });
     });
 
