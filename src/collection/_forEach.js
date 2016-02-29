@@ -10,9 +10,7 @@ function forEach(collection, callback) {
         for (var i = 0, len = collection.length; i < len; i++) {
             callback(collection[i], i, collection);
         }
-    }
-
-    if (typeof collection === 'object') {
+    } else {
         var keys = Object.keys(collection);
 
         for (var i = 0, len = keys.length; i < len; i++) {
